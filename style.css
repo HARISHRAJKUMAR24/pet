@@ -70,9 +70,11 @@ body {
 .cart-icon {
     font-size: 1.6rem;
     /* makes it bigger */
-    color:#2E2E2E;;
+    color: #2E2E2E;
+    ;
     /* black color */
-    -webkit-text-stroke: 0.5px #2E2E2E;;
+    -webkit-text-stroke: 0.5px #2E2E2E;
+    ;
     /* fake bold effect */
     cursor: pointer;
     transition: transform 0.2s ease;
@@ -702,15 +704,22 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
+    /* icon color white */
     text-decoration: none;
+    font-size: 1.2rem;
+    /* icon size */
     transition: all 0.3s;
 }
 
 .social-icon:hover {
     background: var(--orange);
     transform: scale(1.1);
+    color: white;
+    /* keep white on hover */
 }
-
+.last_center p {
+    margin-top: 1rem;   /* ✅ extra spacing from icons */
+}
 .footer-bottom {
     border-top: 1px solid #555;
     padding-top: 1rem;
@@ -1285,6 +1294,15 @@ html {
     .container {
         padding: 0 15px;
     }
+
+    .last_center {
+        text-align: center;
+        /* ✅ center only on mobile */
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
 }
 
 /* Extra Small Devices / Mobile Phones */
@@ -1328,6 +1346,14 @@ html {
         font-size: 0.9rem;
     }
 
+.last_center {
+        text-align: center;   /* ✅ center only on mobile */
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -1358,5 +1384,13 @@ html {
 
     .product-card h4 {
         font-size: 1rem;
+    }
+
+    .last_center {
+        text-align: center;   /* ✅ center only on mobile */
+    }
+
+    .social-icons {
+        justify-content: center;
     }
 }
