@@ -67,31 +67,23 @@ body {
     color: var(--orange);
 }
 
-.cart-btn {
-    background: var(--teal);
-    color: white;
-    border: none;
-    outline: none;
+.cart-icon {
+    font-size: 1.6rem;
+    /* makes it bigger */
+    color:#2E2E2E;;
+    /* black color */
+    -webkit-text-stroke: 0.5px #2E2E2E;;
+    /* fake bold effect */
     cursor: pointer;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
 }
 
-.cart-btn:hover {
-    background: #008b8b;
-    transform: scale(1.1);
+.cart-icon:hover {
+    transform: scale(1.2);
+    /* hover zoom */
+    color: #222;
 }
 
-.cart-btn:active {
-    transform: scale(0.95);
-}
 
 /* Mobile Nav - UPDATED */
 .mobile-nav-toggle {
